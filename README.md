@@ -3,7 +3,7 @@
 <p align="center"><strong>개발자가 아닌 사람도 평소 말투 그대로 Codex에게 작은 프로그램을 맡길 수 있게 해 주는 에이전트 스킬</strong></p>
 
 <p align="center">
-  <a href="https://github.com/LeeDongHyun00/superpowers-sp-plus/releases/tag/v7.0.1-sp.9"><img src="https://img.shields.io/badge/SP%2B-7.0.1--sp.9-0891b2?style=flat-square" alt="SP+ 버전 7.0.1-sp.9" /></a>
+  <a href="https://github.com/LeeDongHyun00/k-superpower/releases/tag/v7.0.1-sp.9"><img src="https://img.shields.io/badge/SP%2B-7.0.1--sp.9-0891b2?style=flat-square" alt="SP+ 버전 7.0.1-sp.9" /></a>
   <a href="https://github.com/obra/superpowers"><img src="https://img.shields.io/badge/based_on-Superpowers_7.0.1-24292f?style=flat-square" alt="Superpowers 7.0.1 기반" /></a>
   <a href="#설치"><img src="https://img.shields.io/badge/works_with-Codex_CLI-7C3AED?style=flat-square" alt="Codex CLI에서 동작" /></a>
   <a href="#결과"><img src="https://img.shields.io/badge/tested_with-gpt--6.1--sol_medium-22c55e?style=flat-square" alt="gpt-6.1-sol medium으로 시험" /></a>
@@ -80,6 +80,8 @@ codex plugin marketplace add LeeDongHyun00/k-superpower
 codex plugin add superpowers@superpowers-sp-plus
 ```
 
+저장소 이름은 `k-superpower`지만, Codex 안에서 쓰는 마켓플레이스 이름은 `superpowers-sp-plus`예요. 마켓플레이스를 추가할 때만 저장소 이름(`LeeDongHyun00/k-superpower`)을 쓰고, 설치·업데이트·삭제 명령에는 `superpowers-sp-plus`를 써요.
+
 <details>
 <summary><b>Windows에서 <code>codex</code>를 찾을 수 없다고 나올 때</b></summary>
 
@@ -87,7 +89,7 @@ Codex 앱은 `%LOCALAPPDATA%\OpenAI\Codex\bin` 아래에 CLI를 따로 가지고
 
 ```powershell
 $codex = (Get-ChildItem "$env:LOCALAPPDATA\OpenAI\Codex\bin" -Recurse -Filter codex.exe | Sort-Object LastWriteTime | Select-Object -Last 1).FullName
-& $codex plugin marketplace add LeeDongHyun00/superpowers-sp-plus
+& $codex plugin marketplace add LeeDongHyun00/k-superpower
 & $codex plugin add superpowers@superpowers-sp-plus
 ```
 
@@ -307,6 +309,8 @@ Windows의 Codex CLI에서만 시험했어요. Superpowers 자체는 여러 에�
 ```bash
 codex plugin marketplace upgrade superpowers-sp-plus
 ```
+
+예전 주소(`LeeDongHyun00/superpowers-sp-plus`)로 추가했어도 GitHub가 새 주소로 넘겨 줘서 업데이트는 그대로 돼요. 설정의 주소까지 새 이름으로 바꾸려면 아래 방법으로 마켓플레이스를 지운 뒤 [설치](#설치)를 다시 하세요.
 
 삭제:
 
