@@ -10,7 +10,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-24292f?style=flat-square" alt="MIT 라이선스" /></a>
 </p>
 
-<p align="center"><a href="https://leedonghyun00.github.io/superpowers-sp-plus/"><strong>처음이라면 복사해서 붙여넣는 설치 안내 →</strong></a></p>
+<p align="center"><a href="https://leedonghyun00.github.io/k-superpower/"><strong>처음이라면 복사해서 붙여넣는 설치 안내 →</strong></a></p>
 
 SP+는 Jesse Vincent와 Prime Radiant가 만든 [Superpowers](https://github.com/obra/superpowers) 7.0.1을 바탕으로 한 Codex 플러그인이에요. 미용실 사장님, 동아리 총무, 학부모처럼 Codex에게 작은 프로그램을 부탁하고 "ㅇㅇ", "계속", "알아서 해"로 답하는 사람을 위해 만들었어요. Superpowers의 스킬은 모두 그대로 두고, 새 스킬 5개와 늘 지키는 규칙 6개를 더했어요. 효과는 한국어 사용자를 흉내 낸 대본 세션으로 측정했어요.
 
@@ -61,7 +61,7 @@ Superpowers는 이미 에이전트가 계획하고 검증하게 해요. SP+는 �
 
 ## 설치
 
-터미널 명령이 낯설면 [설치 안내 페이지](https://leedonghyun00.github.io/superpowers-sp-plus/)를 보세요. 복사 버튼 한 번으로 붙여넣을 수 있게 정리해 두었어요.
+터미널 명령이 낯설면 [설치 안내 페이지](https://leedonghyun00.github.io/k-superpower/)를 보세요. 복사 버튼 한 번으로 붙여넣을 수 있게 정리해 두었어요.
 
 **필요한 것**
 
@@ -73,7 +73,7 @@ Superpowers는 이미 에이전트가 계획하고 검증하게 해요. SP+는 �
 **1. 마켓플레이스 추가와 설치**
 
 ```bash
-codex plugin marketplace add LeeDongHyun00/superpowers-sp-plus
+codex plugin marketplace add LeeDongHyun00/k-superpower
 ```
 
 ```bash
