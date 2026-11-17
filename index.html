@@ -79,7 +79,7 @@ pre code{background:none;border:none;padding:0;font-size:inherit}
 <div class="hero-actions">
   <a class="btn primary" href="#install">설치하기</a>
   <a class="btn" href="#what">무엇이 달라지나</a>
-  <a class="btn" href="https://github.com/LeeDongHyun00/superpowers-sp-plus">GitHub 저장소</a>
+  <a class="btn" href="https://github.com/LeeDongHyun00/k-superpower">GitHub 저장소</a>
 </div>
 
 <h2 id="before">설치 전에 확인할 것</h2>
@@ -109,10 +109,10 @@ pre code{background:none;border:none;padding:0;font-size:inherit}
     </div>
     <div class="codebox panel" data-os="win"><button class="copy" type="button">복사</button><pre><code>$codex = Get-Command codex -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source
 if (-not $codex) { $codex = (Get-ChildItem "$env:LOCALAPPDATA\OpenAI\Codex\bin" -Recurse -Filter codex.exe | Sort-Object LastWriteTime | Select-Object -Last 1).FullName }
-&amp; $codex plugin marketplace add LeeDongHyun00/superpowers-sp-plus
+&amp; $codex plugin marketplace add LeeDongHyun00/k-superpower
 &amp; $codex plugin add superpowers@superpowers-sp-plus
 &amp; $codex plugin list</code></pre></div>
-    <div class="codebox panel" data-os="mac" hidden><button class="copy" type="button">복사</button><pre><code>codex plugin marketplace add LeeDongHyun00/superpowers-sp-plus &amp;&amp; codex plugin add superpowers@superpowers-sp-plus &amp;&amp; codex plugin list</code></pre></div>
+    <div class="codebox panel" data-os="mac" hidden><button class="copy" type="button">복사</button><pre><code>codex plugin marketplace add LeeDongHyun00/k-superpower &amp;&amp; codex plugin add superpowers@superpowers-sp-plus &amp;&amp; codex plugin list</code></pre></div>
     <p>처음 두 줄(Windows)은 Codex 앱 안에 있는 CLI를 찾는 부분이에요. 몇 초 동안 GitHub에서 내려받는 메시지가 지나가요.</p>
   </div></div>
 </div>
@@ -211,13 +211,13 @@ if (-not (Select-String -Path $cfg -Pattern '^\s*tool_output_token_limit' -Quiet
   <div class="me">몰라 그냥 알아서 해줘 ㅎㅎ</div>
   <div class="ai plus"><span class="who">SP+ sp.9</span>업로드할 파일만 담은 <code>공개용</code> 폴더를 준비했어요. 최신 사이트와 동일한지도 확인했습니다. … 인터넷 공개는 아직 하지 않았어요. 작업 약속에 따라 공개 단계는 따로 맡겨 주실 때 진행합니다.</div>
 </div>
-<p class="cmp-note">SP+ 없이 Codex만 쓴 시험에서는 같은 자리의 "ㅇㅇ 계속"에 사용자가 말한 적 없는 호스팅 서비스로 게시를 시도했어요(시험 환경이라 실패). 더 많은 비교는 <a href="https://github.com/LeeDongHyun00/superpowers-sp-plus#실제-대화로-보기">README</a>에 있어요. 아직 못 고친 장면도 거기 적어 두었어요.</p>
+<p class="cmp-note">SP+ 없이 Codex만 쓴 시험에서는 같은 자리의 "ㅇㅇ 계속"에 사용자가 말한 적 없는 호스팅 서비스로 게시를 시도했어요(시험 환경이라 실패). 더 많은 비교는 <a href="https://github.com/LeeDongHyun00/k-superpower#실제-대화로-보기">README</a>에 있어요. 아직 못 고친 장면도 거기 적어 두었어요.</p>
 
 <h2 id="faq">자주 묻는 질문</h2>
 <details><summary>"codex를 찾을 수 없다"고 나와요 (Windows)</summary><p>위 설치 상자의 처음 두 줄이 Codex 앱 안에 있는 CLI를 찾아 줘요. 상자 전체를 한 번에 붙여넣었는지 확인하세요. 그래도 안 되면 Codex 앱이 설치돼 있는지 확인하세요.</p></details>
 <details><summary>설치는 됐는데 계획이 안 보여요</summary><p>이미 열려 있던 Codex 대화는 시작할 때 불러온 스킬을 그대로 써요. Codex를 완전히 닫고 새로 여세요. 작은 수정은 계획 없이 바로 해요. 데이터를 저장하거나 화면이 여러 개인 일을 부탁해 보세요.</p></details>
 <details><summary>혼자서 배포하거나 지우거나 문자를 보내지는 않나요?</summary><p>그 단계를 콕 집은 허락 없이는 하지 않도록 만들었어요. 시험에서 허락 없이 한 경우는 없었어요. 그래도 중요한 파일은 백업해 두세요.</p></details>
-<details><summary>내 프로젝트 내용이 어딘가로 가나요?</summary><p>SP+는 네트워크 호출을 더하지 않아요. 원작 Superpowers의 선택 기능 하나가 로고를 불러오면서 쓰는 버전을 원작자에게 알리는데, 끄는 방법은 <a href="https://github.com/LeeDongHyun00/superpowers-sp-plus#권장-설정">README의 권장 설정</a>에 있어요.</p></details>
+<details><summary>내 프로젝트 내용이 어딘가로 가나요?</summary><p>SP+는 네트워크 호출을 더하지 않아요. 원작 Superpowers의 선택 기능 하나가 로고를 불러오면서 쓰는 버전을 원작자에게 알리는데, 끄는 방법은 <a href="https://github.com/LeeDongHyun00/k-superpower#권장-설정">README의 권장 설정</a>에 있어요.</p></details>
 <details><summary>"Filename too long"이 나와요</summary><p>Codex 홈 폴더를 아주 깊은 경로로 바꿨을 때만 생겨요. 기본 위치(<code>C:\Users\내이름\.codex</code>)를 쓰면 괜찮아요.</p></details>
 
 <h2 id="update">업데이트와 삭제</h2>
@@ -244,7 +244,7 @@ if (-not $codex) { $codex = (Get-ChildItem "$env:LOCALAPPDATA\OpenAI\Codex\bin" 
 <div class="codebox panel" data-os="mac" hidden><button class="copy" type="button">복사</button><pre><code>codex plugin remove superpowers@superpowers-sp-plus &amp;&amp; codex plugin marketplace remove superpowers-sp-plus</code></pre></div>
 
 <h2 id="more">더 알아보기</h2>
-<p><a href="https://github.com/LeeDongHyun00/superpowers-sp-plus">README</a>에 스킬 목록, 시험 방법, 결과 수치가 있어요. SP+는 실험 단계이고, Windows의 Codex CLI와 gpt-6.1-sol(medium)에서만 시험했어요.</p>
+<p><a href="https://github.com/LeeDongHyun00/k-superpower">README</a>에 스킬 목록, 시험 방법, 결과 수치가 있어요. SP+는 실험 단계이고, Windows의 Codex CLI와 gpt-6.1-sol(medium)에서만 시험했어요.</p>
 
 <footer>
   SP+는 <a href="https://github.com/obra/superpowers">Superpowers</a>(Jesse Vincent, Prime Radiant, MIT 라이선스)를 바탕으로 하며 같은 라이선스로 공개돼요. 원작자와 관계가 없고 보증을 받지 않았어요.
